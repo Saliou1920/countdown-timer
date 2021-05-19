@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url("/images/redcharlie.jpg") no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: white;
+    padding-top: 100px;
+}
+.container {
+    /* background: hsl(235, 16%, 14%) url("/images/bg-stars.svg"); */
+    text-align: center;
+    padding: 10% 10%;
+}
+
+.timer {
+    padding-top: 150px;
+
+}
+
+
+.attribution {
+    text-align: center;
+    position: fixed;
+    padding-bottom: 40px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: hsl(0, 0%, 97%);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+.attribution a:hover {
+    color: red;
+}
+
+span {
+    font-family: 'Pacifico', cursive;
+    font-size: 5em;
+    color: white;
+    padding-right: 12px;
+    padding-left: 12px;
+}
