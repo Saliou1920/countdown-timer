@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-- Live Site URL: [Here]( https://saliou1920.github.io/3-column-preview-card-component/)
+- Live Site URL: [Here](  https://saliou1920.github.io/countdown-timer/)
 
 ## Table of contents 🙂
 
@@ -39,6 +39,7 @@ Others website that I build 👇
 
 - Live Site URL: [Here]( https://saliou1920.github.io/Fylo-dark-theme-landing-page/)
 
+- Countdown Timer : [Here]( https://saliou1920.github.io/countdown-timer/)
 
 ### Built with 🧰 
 
