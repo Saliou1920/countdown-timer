@@ -5,15 +5,16 @@
     box-sizing: border-box;
 }
 body {
-    background: url("/images/redcharlie.jpg") no-repeat;
-    background-position: center;
+    /* background: url("/images/redcharlie.jpg") no-repeat;
+    background-position: center; */
+    background-color: #132c33;
 }
 
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 3em;
     color: white;
-    padding-top: 100px;
+    padding-top: 40px;
 }
 .container {
     /* background: hsl(235, 16%, 14%) url("/images/bg-stars.svg"); */
@@ -22,7 +23,7 @@ h1 {
 }
 
 .timer {
-    padding-top: 150px;
+    padding-top: 100px;
 
 }
 
@@ -61,5 +62,9 @@ span {
 @media only screen and (max-width: 600px) {
     span {
         font-size: 3em;
+    }
+    .titre {
+        font-size: 1.2em;
+        padding-right: 15px;
     }
   }
