@@ -53,6 +53,11 @@ span {
     padding-left: 12px;
 }
 
+.titre {
+    font-size: 1.5em;
+    padding-right: 40px;
+}
+
 @media only screen and (max-width: 600px) {
     span {
         font-size: 3em;
