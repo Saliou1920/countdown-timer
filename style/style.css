@@ -47,8 +47,14 @@ h1 {
 
 span {
     font-family: 'Pacifico', cursive;
-    font-size: 5em;
+    font-size: 6em;
     color: white;
     padding-right: 12px;
     padding-left: 12px;
 }
+
+@media only screen and (max-width: 600px) {
+    span {
+        font-size: 3em;
+    }
+  }
