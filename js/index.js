@@ -13,9 +13,9 @@ let startDate = 1621581601;
 
 
 let id = setInterval(() => {
-    document.getElementById("me").innerHTML =  myTimer(time--);
+    document.getElementById("timer").innerHTML =  myTimer(time--);
     if ( (time + startDate) <= todayDate) {
-        document.getElementById("me").innerText = "Il est : 00:00:00:00";
+        document.getElementById("timer").innerHTML = "<span>" + 00 + "</span>" + " " + "<span>" + 00 + "</span>" + " " + "<span>" + 00 + "</span>" + " " + "<span>" + 00 + "</span>";
         clearInterval(id);
     }
 }, 1000
@@ -37,5 +37,5 @@ function myTimer(timer) {
     minutes = String(minutes).padStart(2, "0");
     hours = String(hours).padStart(2, "0");
     seconds = String(seconds).padStart(2, "0");
-    return "<span>" + day + "</span>" + ":" + "<span>" + hours + "</span>" + ":" + "<span>" + minutes + "</span>" + ":" + "<span>" + seconds + "</span>" ;
+    return "<span>" + day + "</span>" + " " + "<span>" + hours + "</span>" + " " + "<span>" + minutes + "</span>" + " " + "<span>" + seconds + "</span>" ;
 }
