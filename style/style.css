@@ -22,9 +22,8 @@ h1 {
     padding: 10% 10%;
 }
 
-.timer {
-    padding-top: 100px;
-
+.timer-div {
+    padding: 10% 15%;
 }
 
 
@@ -60,6 +59,7 @@ span {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     column-gap: .5rem;
+    align-items: center;
 }
 .titre {
     font-size: 1.5em;
@@ -75,5 +75,8 @@ span {
     .titre {
         font-size: 1.2em;
         padding-right: 15px;
+    }
+    .timer-div {
+        padding: 40% 3%;
     }
   }
