@@ -1,41 +1,56 @@
 
-// timer
-let time = 7200;
-var y = Date.now();
-let todayDate = Math.floor(y / 1000);
-let startDate = 1621581601;
-// let i = 0;
-// setTimeout(function() {
-//     let id = document.querySelector("p");
-//     id.innerText = "Time: " + i++;
-// }, 1000);
+const startDate = new Date("May 25, 2021 02:20:00").getTime();
+const todayDate = Date.now();
+let difference = startDate - todayDate;
+difference = Math.floor(difference / 1000);
 
-
+// selectors
+const days = document.querySelector(".days"),
+    hours = document.querySelector(".hours"),
+    minutes = document.querySelector(".minutes"),
+    secondes = document.querySelector(".secondes");
 
 let id = setInterval(() => {
-    document.getElementById("timer").innerHTML =  myTimer(time--);
-    if ( (time + startDate) <= todayDate) {
-        document.getElementById("timer").innerHTML = "<span>" + 00 + "</span>" + " " + "<span>" + 00 + "</span>" + " " + "<span>" + 00 + "</span>" + " " + "<span>" + 00 + "</span>";
+    
+    let timer = myTimer(difference--);
+    if (timer.seconde < 0) {
+        days.innerText = "00";
+        hours.innerText = "00";
+        minutes.innerText = "00";
+        secondes.innerText = "00";
         clearInterval(id);
+    } else {
+        days.innerText = String(timer.day);
+        hours.innerText = timer.hour;
+        minutes.innerText = timer.minute;
+        secondes.innerText = timer.seconde;
     }
+    
 }, 1000
 
 )
 
-function myTimer(timer) {
-    timer += startDate;
-    let totalSeconds = timer - Math.floor(y / 1000) ;
-    let day = Math.floor(totalSeconds / (24 * 3600)); 
+function myTimer(totalSeconds) {
+
+    var timerObject = {
+        day: 0,
+        hour: 0,
+        minute: 0,
+        seconde: 0
+      };
+
+    timerObject.day = Math.floor(totalSeconds / (24 * 3600)); 
     totalSeconds = totalSeconds % (24 * 3600); 
-    let hours = Math.floor(totalSeconds / 3600);
+    timerObject.hour = Math.floor(totalSeconds / 3600);
     totalSeconds %= 3600;
-    let minutes = Math.floor(totalSeconds / 60);
-    let seconds = totalSeconds % 60;
+    timerObject.minute = Math.floor(totalSeconds / 60);
+    timerObject.seconde = totalSeconds % 60;
     
     // If you want strings with leading zeroes:
-    day = String(day).padStart(2, "0");
-    minutes = String(minutes).padStart(2, "0");
-    hours = String(hours).padStart(2, "0");
-    seconds = String(seconds).padStart(2, "0");
-    return "<span>" + day + "</span>" + " " + "<span>" + hours + "</span>" + " " + "<span>" + minutes + "</span>" + " " + "<span>" + seconds + "</span>" ;
+    timerObject.day  = String(timerObject.day ).padStart(2, "0");
+    timerObject.hour = String(timerObject.hour).padStart(2, "0");
+    timerObject.minute = String(timerObject.minute).padStart(2, "0");
+    timerObject.seconde = String(timerObject.seconde).padStart(2, "0");
+
+    return timerObject;
 }

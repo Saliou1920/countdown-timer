@@ -1,82 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body {
-    /* background: url("/images/redcharlie.jpg") no-repeat;
-    background-position: center; */
-    background-color: #151515;
+    background: #151515 url("/images/toronto.jpg") no-repeat fixed center;
 }
-
-h1 {
+h1, span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+h1, h2, span {
+    color: #fdfaf6;
+}
+h2 {
     font-family: 'Pacifico', cursive;
-    font-size: 3em;
-    color: white;
-    padding-top: 40px;
-}
-.container {
-    /* background: hsl(235, 16%, 14%) url("/images/bg-stars.svg"); */
-    text-align: center;
-    padding: 10% 10%;
+    font-size: 5rem;
+    font-weight: bold;
 }
 
-.timer-div {
-    padding: 10% 15%;
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: lightcoral;
+}
+p, a {
+    color: #99154e;
+}
+p {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.count__down {
+    min-height: 90vh;
+}
+.title {
+    font-size: 4em;
+    margin-top: 80px;
+}
+.subtitle {
+    font-size: 2rem;
+}
+.grid {
+    display: grid;
+    row-gap: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
+.grid__timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 70px;
+}
 
 .attribution {
-    text-align: center;
-    position: fixed;
-    padding-bottom: 40px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: #ff1e56;
+    display: flex;
+    justify-content: center;
 }
 
-.attribution a {
-    text-decoration: none;
-    color: #ff1e56;
-}
-.attribution a:hover {
-    color: white;
-}
+.img__time {
+    visibility: hidden;
 
-span {
-
-    font-family: 'Pacifico', cursive;
-    font-size: 6em;
-    color: white;
-    padding-right: 12px;
-    padding-left: 12px;
-    background-color: #ff1e56;
-    border-radius: 10px;
-}
-#timer, .timer__title {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    column-gap: .5rem;
-    align-items: center;
-}
-.titre {
-    font-size: 1.5em;
-    /* padding-right: 40px; */
-    height: 50px;
 }
 
 @media only screen and (max-width: 600px) {
-    span {
-        font-size: 3em;
-        border-radius: 7px;
+
+    body {
+        background: #151515 url("/images/toronto-night.jpg") no-repeat fixed center;
+        background-size: 100% 100%;
+
     }
-    .titre {
-        font-size: 1.2em;
-        padding-right: 15px;
+    h1, span {
+        font-weight: 600;
     }
-    .timer-div {
-        padding: 40% 3%;
+
+    .title {
+        font-size: 1.75em;
+        padding-top: 120px;
+        text-align: center;
     }
+ 
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+    p {
+        font-size: .75rem;
+    }
+    .img__time {
+        visibility: visible; 
+    }
+    .image {
+        width: 400px;
+    }
+    
   }

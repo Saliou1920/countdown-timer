@@ -49,8 +49,9 @@ Others website that I build 👇
 
 ### Useful resources
 
-- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) - 
-
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) 
+- Background Photo by <a href="https://unsplash.com/@jamked?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jamshed Khedri</a> on <a href="https://unsplash.com/s/photos/toronto-night?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
 ## Author 
 

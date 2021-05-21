@@ -6,36 +6,52 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style/style.css">
-  <title>Frontend Mentor | Launch countdown timer</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>Countdown timer</title>
 
 </head>
 <body>
-  <div class="container">
-    <h1>  We're launching soon ...</h1>
-    <div class="timer-div">
-      <div>
-        <h2></h2>
-      </div>
-      <div class="timer" id="timer"></div>
 
-      <div class="timer__title">
-        <span class="titre">Days</span>
-        <span class="titre">Hours</span>
-        <span class="titre">Minutes</span> 
-        <span class="titre">Seconds</span>
-      </div>
- 
+  <section class="count__down">
+    <div class="grid">
+      <h1 class="title">We're launching soon</h1>
+      <div class="grid grid__timer">
 
+        <div class="container container__day">
+          <h2 class="days"></h2>
+          <span class="subtitle">Days</span>
+        </div>
+
+        <div class="container container__hours">
+          <h2 class="hours"></h2>
+          <span class="subtitle">Hours</span>
+        </div>
+
+        <div class="container container__minutes">
+          <h2 class="minutes"></h2>
+          <span class="subtitle">Minutes</span>
+        </div>
+
+        <div class="container container__secondes">
+          <h2 class="secondes"></h2>
+          <span class="subtitle">Seconds</span>
+        </div>
+
+      </div>
+
+      <!-- add a nice image here -->
+      <div class="img__time" di>
+        <img class="image" src="/images/boy-waiting-with-cat-red.png" alt="time">
+      </div>
     </div>
-
-  </div>
+  </section>
 
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Saliou</a>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#"> Saliou</a>
+    </p>
+
   </div>
 
   <script src="js/index.js"></script>
