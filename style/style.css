@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    background: #151515 url("/images/toronto.jpg") no-repeat fixed center;
+    background: #151515 url(../images/toronto.jpg) no-repeat fixed center;
 }
 h1, span {
     font-family: 'Poppins', sans-serif;
@@ -71,7 +71,7 @@ p {
 @media only screen and (max-width: 600px) {
 
     body {
-        background: #151515 url("/images/toronto-night.jpg") no-repeat fixed center;
+        background: #151515 url("../images/toronto-night.jpg") no-repeat fixed center;
         background-size: 100% 100%;
 
     }
