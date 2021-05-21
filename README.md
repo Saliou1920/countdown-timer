@@ -32,7 +32,10 @@ Users should be able to:
 
 ### Screenshot (My Solution) 💻 
 
-![](images/timer.png)
+![](images/screen2.png)
+
+![](images/screen1.png)
+
 ### Links
 
 Others website that I build 👇
