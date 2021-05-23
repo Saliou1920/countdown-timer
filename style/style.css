@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    background: #151515 url(../images/toronto.jpg) no-repeat fixed center;
+    background: #151515 url(../images/toronto.jpg) no-repeat center;
 }
 h1, span {
     font-family: 'Poppins', sans-serif;
@@ -35,18 +35,18 @@ p {
     font-weight: bold;
 }
 .count__down {
-    min-height: 90vh;
+    max-height: 100vh;
 }
 .title {
     font-size: 4em;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 .subtitle {
     font-size: 2rem;
 }
 .grid {
     display: grid;
-    row-gap: 40px;
+    row-gap: 30px;
     align-items: center;
     justify-content: center;
 }
@@ -55,12 +55,11 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .attribution {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .img__time {
@@ -71,7 +70,8 @@ p {
 @media only screen and (max-width: 600px) {
 
     body {
-        background: #151515 url("../images/toronto-night.jpg") no-repeat fixed center;
+        background: #151515 url("../images/toronto-night.jpg") no-repeat center;
+        background-size: cover;
         background-size: 100% 100%;
 
     }
