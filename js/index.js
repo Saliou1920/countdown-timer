@@ -1,5 +1,5 @@
 
-const startDate = new Date("May 25, 2021 02:20:00").getTime();
+const startDate = new Date("July 09, 2021 02:20:00").getTime();
 const todayDate = Date.now();
 let difference = startDate - todayDate;
 difference = Math.floor(difference / 1000);
